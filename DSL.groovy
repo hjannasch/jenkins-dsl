@@ -6,6 +6,9 @@ reposJSON.repos.each {
     createPipeline(it)
 }
 
+listView('project-A') 
+folder('folder')
+
 void createPipeline(it) {
 
     def jobname = it.jobname
